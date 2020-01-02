@@ -3,6 +3,7 @@ let posArray = [];
 let negArray = [];
 let posSum = 0;
 let negSum = 0;
+let biggestNeg;
 //let sortedArray = array.sort().reverse();
 
   for(let i=0; i<array.length; i++){
