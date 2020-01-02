@@ -6,22 +6,10 @@ let sortedArray = array.sort().reverse();
   for(let i=0; i<array.length; i++){
     if(array[i] > 0){
       positiveSum += array[i];
-    }
-  }
-
-
-  //let j = 0;
-  //let array[j-1] = 0;
-  for(let j=0; j<array.lenth; j++){
-    if(array[j] < 0){
-        //let biggestNeg = -1000;
-        if(array[j] > biggestNeg){
-          biggestNeg = array[j];
+    }else if(array[i] < 0){
+        if(array[i] > biggestNeg){
+          biggestNeg = array[i];
         }
-    }
-
-    if(biggesNeg == -1000){
-      biggestNeg = 0;
     }
   }
 
