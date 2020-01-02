@@ -7,7 +7,7 @@ function largestSubarraySum(array){
     tempSum += element; // add it to partialSum
 if (tempSum < 0) tempSum = 0; // zero if negative
     maxSum = Math.max(maxSum, tempSum); // remember the maximum
-    
+
   }
   return maxSum;
 }
