@@ -1,19 +1,34 @@
 function largestSubarraySum(array){
-let positiveSum = 0;
-let biggestNeg = -100;
-let sortedArray = array.sort().reverse();
+let posArray = [];
+let negArray = [];
+let posSum = 0;
+let negSum = 0;
+//let sortedArray = array.sort().reverse();
 
   for(let i=0; i<array.length; i++){
     if(array[i] > 0){
-      positiveSum += array[i];
+      posArray.push(array[i]);
     }else if(array[i] < 0){
-        if(array[i] > biggestNeg){
-          biggestNeg = array[i];
-        }
+      negArray.push(array[i]);
     }
   }
 
-let mixedSum = positiveSum + biggestNeg;
-return positiveSum;
+  for(let j = 0; j<posArray.length; j++){
+    posSum += posArray[j];
+  }
+
+  for(let k = 0; k<negArray.length; k++){
+    negSum += negArray[k];
+  }
+
+if(negArray == null){
+  return posSum; 
+}else if(posArray == null){
+  for(let q=0; q<posArray.length; q++){
+    return negArray; 
+  }
+}else{
+  return posSum;
+}
 
 }
