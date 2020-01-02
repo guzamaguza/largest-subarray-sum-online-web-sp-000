@@ -14,6 +14,6 @@ let sortedArray = array.sort().reverse();
   }
 
 let mixedSum = positiveSum + biggestNeg;
-return mixedSum;
+return positiveSum;
 
 }
