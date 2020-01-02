@@ -18,15 +18,13 @@ let biggestNeg = 0;
           biggestNeg = array[j];
         }
     }
+
+    if(biggesNeg == -1000){
+      biggestNeg = 0;
+    }
   }
 
 let mixedSum = positiveSum + biggestNeg;
-if(mixedSum > positiveSum){
-  return mixedSum;
-}else if(positiveSum > biggestNeg){
-  return positiveSum
-}else{
-  return biggestNeg
-}
+return mixedSum;
 
 }
