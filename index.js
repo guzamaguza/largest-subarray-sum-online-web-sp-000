@@ -22,10 +22,10 @@ let negSum = 0;
   }
 
 if(negArray == null){
-  return posSum; 
+  return posSum;
 }else if(posArray == null){
   for(let q=0; q<posArray.length; q++){
-    return negArray; 
+    return negArray;
   }
 }else{
   return posSum;
