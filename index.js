@@ -8,12 +8,12 @@ let biggestNeg = 0;
     }
   }
 
-  let biggestNeg = 0;
+  
   let j = 0;
   //let array[j-1] = 0;
   for(j=0; j<array.lenth; j++){
     if(array[j] < 0){
-
+        let biggestNeg = array[j];
         if(array[j] > biggestNeg){
           biggestNeg = array[j]
         }
