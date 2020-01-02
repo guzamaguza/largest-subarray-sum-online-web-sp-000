@@ -16,5 +16,5 @@ let biggestNeg = 0;
     }
   }
 
-  return positiveSum + ;
+  return positiveSum + biggestNeg;
 }
