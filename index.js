@@ -22,9 +22,11 @@ let biggestNeg;
     negSum += negArray[k];
   }
 
-if(negArray.length === 0){
+
+//RETURN LOOPS
+if(negArray.length === 0  && posArray.length != 0){
   return posSum;
-}else if(posArray.length === 0){
+}else if(negArray.length != 0 && posArray.length === 0){
     biggestNeg = negArray[0];
     for(let q=1; q<negArray.length; q++){
       if(negArray[q] > biggestNeg){
