@@ -8,8 +8,10 @@ let biggestNeg = 0;
     }
   }
 
+  let array[j-1] = 0;
   for(let j=0; j<array.lenth; j++){
     if(array[j] < 0){
+
         if(array[j] > array[j-1]){
           biggestNeg = array[j]
         }
