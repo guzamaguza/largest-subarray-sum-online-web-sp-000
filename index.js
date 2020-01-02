@@ -5,8 +5,9 @@ function largestSubarraySum(array){
 
   for (let element of array) { // for each element of the array
     tempSum += element; // add it to partialSum
+if (tempSum < 0) tempSum = 0; // zero if negative
     maxSum = Math.max(maxSum, tempSum); // remember the maximum
-    if (tempSum < 0) tempSum = 0; // zero if negative
+    
   }
   return maxSum;
 }
