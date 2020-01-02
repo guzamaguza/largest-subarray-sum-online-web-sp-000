@@ -1,6 +1,6 @@
 function largestSubarraySum(array){
 let positiveSum = 0;
-let biggestNeg = -1000;
+let biggestNeg = Math.min(array);
 
   for(let i=0; i<array.length; i++){
     if(array[i] > 0){
