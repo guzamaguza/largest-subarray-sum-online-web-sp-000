@@ -32,7 +32,7 @@ if(negArray.length == 0){
     }
     return biggestNeg;
 }else{
-  return posSum;
+    return posSum;
 }
 
 }
