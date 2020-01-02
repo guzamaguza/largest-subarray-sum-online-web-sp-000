@@ -11,7 +11,6 @@ function largestSubarraySum(array){
 
   return maxSum;
 
-
 /*
 let posArray = [];
 let negArray = [];
