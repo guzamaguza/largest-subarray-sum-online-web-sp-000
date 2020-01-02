@@ -28,7 +28,7 @@ if(negArray.length === 0  && posArray.length != 0){
   return posSum;
 }else if(negArray.length != 0 && posArray.length === 0){
     biggestNeg = negArray[0];
-    for(let q=1; q<negArray.length; q++){
+    for(let q=0; q<negArray.length; q++){
       if(negArray[q] > biggestNeg){
         biggestNeg = negArray[q];
       }
