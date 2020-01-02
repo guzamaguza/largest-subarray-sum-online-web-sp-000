@@ -15,6 +15,6 @@ let negArray = [];
   }
 
 
-  
+
   return positiveSum + ;
 }
