@@ -13,12 +13,20 @@ let biggestNeg = 0;
   //let array[j-1] = 0;
   for(let j=0; j<array.lenth; j++){
     if(array[j] < 0){
-        let biggestNeg = -10;
+        let biggestNeg = -1000;
         if(array[j] > biggestNeg){
           biggestNeg = array[j];
         }
     }
   }
 
-  return positiveSum + biggestNeg;
+let mixedSum = positiveSum + biggestNeg;
+if(mixedSum > positiveSum){
+  return mixedSum;
+}else if(positiveSum > biggestNeg){
+  return positiveSum
+}else{
+  return biggestNeg
+}
+
 }
