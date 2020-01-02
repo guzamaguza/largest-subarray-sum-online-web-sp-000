@@ -8,7 +8,7 @@ let biggestNeg = 0;
     }
   }
 
-  
+
   let j = 0;
   //let array[j-1] = 0;
   for(j=0; j<array.lenth; j++){
