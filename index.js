@@ -54,6 +54,3 @@ if(negArray.length === 0  && posArray.length != 0){
     return posSum;
 }
 */
-
-
-
