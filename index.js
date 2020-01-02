@@ -24,9 +24,13 @@ let negSum = 0;
 if(negArray == null){
   return posSum;
 }else if(posArray == null){
-  for(let q=0; q<posArray.length; q++){
-    return negArray;
-  }
+    biggestNeg = negArray[0];
+    for(let q=1; q<negArray.length; q++){
+      if(negArray[q] > biggestNeg){
+        biggestNeg = negArray[q];
+      }
+    }
+    return biggestNeg;
 }else{
   return posSum;
 }
