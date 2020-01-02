@@ -5,4 +5,5 @@ let sum = 0;
       sum += array[i];
     }
   }
+  return sum;
 }
