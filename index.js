@@ -3,7 +3,7 @@ function largestSubarraySum(array){
   let maxSum = 0;
   let tempSum = 0;
 
-  for (let item of arr) { // for each item of arr
+  for (let item of array) { // for each item of arr
     tempSum += item; // add it to partialSum
     maxSum = Math.max(maxSum, tempSum); // remember the maximum
     if (tempSum < 0) tempSum = 0; // zero if negative
